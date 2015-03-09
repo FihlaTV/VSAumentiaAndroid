@@ -9,13 +9,13 @@ Visual Search Framework
 * Real time image matching (50-100 images per pool).
 * Insert images from local resources: works offline!
 * White Label.
+
+<b> TODO </b>
+* Insert images from URL.
 * QR code scan support.
 * Scan up to 4 QR / bar codes at a time.
 * Define you matching areas: Regions of Interest.
 * Match images and QR codes simultaneously
-
-<b> TODO </b>
-* Insert images from URL.
 * Text recognition
 
 <br>
@@ -23,7 +23,7 @@ Visual Search Framework
     Request an API Key
 **********************
 To use the framework you will need an API Key. To request it, just send an email to info@aumentia.com with the following details:
-* Bundle Id of the application where you want to use the framework.
+* Application Id where you want to use the framework.
 * Name and description of the app where you want to use the framework.
 * Your ( or your company ) name.
 
