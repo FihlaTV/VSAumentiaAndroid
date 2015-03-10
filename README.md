@@ -33,7 +33,8 @@ To use the framework you will need an API Key. To request it, just send an email
 **********************
     Documentation
 **********************
-TODO
+[Wiki](https://github.com/aumentia/HelloVisualSearch_Android/wiki)
+
 
 <br>
 ******************
