@@ -9,6 +9,7 @@ Visual Search Framework
 * Real time image matching (50-100 images per pool).
 * Insert images from local resources: works offline!
 * White Label.
+* Optimized for arm, armv7
 
 <b> TODO </b>
 * Insert images from URL.
@@ -17,6 +18,7 @@ Visual Search Framework
 * Define you matching areas: Regions of Interest.
 * Match images and QR codes simultaneously
 * Text recognition
+* Optimize for x86 and mips
 
 <br>
 **********************
@@ -44,6 +46,18 @@ TODO
    Android Version
 ******************
 14
+
+******************
+    Devices Tested
+******************
+* Samsung Galaxy S3
+* Samsung Galaxy S4 mini
+* Samsung Galaxy S
+* Samsung Note
+* Moto G
+* Huawei Ascend Y330
+* LG LSII
+* Nexus 5
 
 <br>
 *************************
