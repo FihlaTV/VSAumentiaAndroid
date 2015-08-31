@@ -8,15 +8,15 @@ Visual Search Framework
 * Add visual search to your app.
 * Real time image matching (50-100 images per pool).
 * Insert images from local resources: works offline!
+* QR code scan support.
+* Match images and QR codes simultaneously
 * White Label.
 * Optimized for arm, armv7
 
 <b> TODO </b>
 * Insert images from URL.
-* QR code scan support.
 * Scan up to 4 QR / bar codes at a time.
 * Define you matching areas: Regions of Interest.
-* Match images and QR codes simultaneously
 * Text recognition
 * Optimize for x86 and mips
 
