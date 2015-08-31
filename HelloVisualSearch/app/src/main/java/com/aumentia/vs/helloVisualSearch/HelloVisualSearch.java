@@ -21,11 +21,14 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.aumentia.vs.visualsearchsdk.API.OnImageMatched;
+import com.aumentia.vs.visualsearchsdk.API.OnQRScanned;
+import com.aumentia.vs.visualsearchsdk.API.ROI;
 import com.aumentia.vs.visualsearchsdk.API.VSAumentia;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
-public class HelloVisualSearch extends Activity implements OnImageMatched
+public class HelloVisualSearch extends Activity implements OnImageMatched, OnQRScanned
 {
     //--- GLOBAL VARIABLES -------------------------------------------------------------------------
 
@@ -33,7 +36,7 @@ public class HelloVisualSearch extends Activity implements OnImageMatched
     private FrameLayout             frame;
 
     // VS instance
-    private VSAumentia              vsAumentia;
+    private VSAumentia vsAumentia;
 
     // TextView to display the matched result
     private TextView                textView    = null;
@@ -78,14 +81,18 @@ public class HelloVisualSearch extends Activity implements OnImageMatched
         // Init Visual Search engine
         vsAumentia = new VSAumentia(this, API_KEY, VSAumentia.SCREEN_ORIENTATION_PORTRAIT, PreviewSizeWidth, PreviewSizeHeight, true, ImageFormat.NV21, frame);
 
+        // Set mathing type ( QR codes and Images )
+        vsAumentia.setMatchingType(VSAumentia.IMAGE_QR_MATCHER_MODE);
+
         // Filter results
         vsAumentia.enableFilter(true);
 
         // Only images with a score of 5 or bigger will be added to the matching pool
         vsAumentia.setRecognitionThreshold(5);
 
-        // Register callback
+        // Register callbacks
         vsAumentia.setImageRecognitionCallback( this );
+        vsAumentia.setQRRecognitionCallback(this);
 
         // Add text view to show the matched image info
         addTextView();
@@ -180,6 +187,24 @@ public class HelloVisualSearch extends Activity implements OnImageMatched
         {
             textView.setText("No Match");
         }
+    }
+
+    @Override
+    public void onSingleQRScanned(String result)
+    {
+        if (!result.equals(""))
+        {
+            textView.setText(result);
+        }
+        else
+        {
+            textView.setText("No Match");
+        }
+    }
+
+    @Override
+    public void onMultipleQRScanned(ArrayList<ROI> roiList) {
+        // TODO: pending feature
     }
 
 
