@@ -12,7 +12,7 @@ Visual Search Framework
 * Match images and QR codes simultaneously
 * White Label.
 * Optimized for arm, armv7
-* ** The library is available via the JCenter repository **
+* <b> The library is available via the JCenter repository </b>
 
 <b> TODO </b>
 * Insert images from URL.
