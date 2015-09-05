@@ -17,6 +17,7 @@ Visual Search Framework
 * Insert images from URL.
 * Scan up to 4 QR / bar codes at a time.
 * Define you matching areas: Regions of Interest.
+* Motion recognition
 * Text recognition
 * Optimize for x86 and mips
 
