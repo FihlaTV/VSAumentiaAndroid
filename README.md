@@ -6,17 +6,19 @@ Visual Search Framework
 </p>
 
 * Add visual search to your app.
-* Real time image matching (50-100 images per pool).
+* Real time image matching.
 * Insert images from local resources: works offline!
 * QR code scan support.
 * Match images and QR codes simultaneously
 * White Label.
 * Optimized for arm, armv7
+* <b> The library is available via the JCenter repository </b>
 
 <b> TODO </b>
 * Insert images from URL.
 * Scan up to 4 QR / bar codes at a time.
 * Define you matching areas: Regions of Interest.
+* Motion recognition
 * Text recognition
 * Optimize for x86 and mips
 
@@ -41,6 +43,33 @@ To use the framework you will need an API Key. To request it, just send an email
     API
 ******************
 [api.aumentia.com](http://api.aumentia.com/visualsearch_android/)
+
+<br>
+******************
+    Library via JCenter
+******************
+
+* Add JCenter to Gradle:
+```objective-c
+repositories {  
+   jcenter()  
+}
+```
+
+* Add the library to the dependencies:
+
+```objective-c
+dependencies {
+    compile 'VisualSearchSDK:visualsearchsdk:0.6.0'
+}
+```
+
+<br>
+******************
+    Troubleshooting
+******************
+[Troubleshooting](https://github.com/aumentia/VSAumentiaAndroid/wiki/Troubleshooting)
+
 
 <br>
 ******************
