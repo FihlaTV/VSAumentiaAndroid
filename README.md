@@ -60,7 +60,7 @@ repositories {
 
 ```objective-c
 dependencies {
-    compile 'com.aumentia.vs.visualsearchsdk.API:VSAumentia:0.6.0'
+    compile 'VisualSearchSDK:visualsearchsdk:0.6.0'
 }
 ```
 
