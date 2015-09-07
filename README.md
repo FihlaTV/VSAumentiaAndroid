@@ -66,6 +66,13 @@ dependencies {
 
 <br>
 ******************
+    Troubleshooting
+******************
+[Troubleshooting](https://github.com/aumentia/VSAumentiaAndroid/wiki/Troubleshooting)
+
+
+<br>
+******************
    Android Version
 ******************
 14
