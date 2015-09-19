@@ -14,13 +14,11 @@ Visual Search Framework
 * Optimized for arm, armv7
 * <b> The library is available via the JCenter repository </b>
 
-<b> TODO </b>
-* Insert images from URL.
-* Scan up to 4 QR / bar codes at a time.
-* Define you matching areas: Regions of Interest.
-* Motion recognition
-* Text recognition
-* Optimize for x86 and mips
+<br>
+**********************
+    NEW: Motion Recognition
+**********************
+* Define virtual buttons (regions of interest) to detect motion
 
 <br>
 **********************
