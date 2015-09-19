@@ -79,7 +79,9 @@ public class HelloVisualSearch extends Activity implements OnImageMatched, OnQRS
         frame = (FrameLayout) findViewById(R.id.cameraFrameId);
 
         // Init Visual Search engine
-        vsAumentia = new VSAumentia(this, API_KEY, VSAumentia.SCREEN_ORIENTATION_PORTRAIT, PreviewSizeWidth, PreviewSizeHeight, true, ImageFormat.NV21, frame);
+        vsAumentia = VSAumentia.getmInstance();
+
+        vsAumentia.init(this, API_KEY, VSAumentia.SCREEN_ORIENTATION_PORTRAIT, PreviewSizeWidth, PreviewSizeHeight, true, ImageFormat.NV21, frame, VSAumentia.VISUAL_SEARCH_ENGINE);
 
         // Set mathing type ( QR codes and Images )
         vsAumentia.setMatchingType(VSAumentia.IMAGE_QR_MATCHER_MODE);

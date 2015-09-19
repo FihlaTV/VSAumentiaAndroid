@@ -48,5 +48,5 @@ dependencies {
     compile project(':VSAumentia')
 
     // Option 2
-    //compile 'VisualSearchSDK:visualsearchsdk:0.6.0'
+    //compile 'VisualSearchSDK:visualsearchsdk:0.7.0'
 }
